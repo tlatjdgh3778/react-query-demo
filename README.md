@@ -2,7 +2,7 @@
 
 ## 1. React Query?
 
-`[React Query](https://react-query-v3.tanstack.com/)`는 리액트 애플리케이션에서 서버 상태(**Server State**)를 가져오고, 캐싱, 동기화, 업데이트 작업을 쉽게 만들어주는 라이브러리이다.
+[**React Query**](https://react-query-v3.tanstack.com/)는 리액트 애플리케이션에서 서버 상태(**Server State**)를 가져오고, 캐싱, 동기화, 업데이트 작업을 쉽게 만들어주는 라이브러리이다.
 
 ---
 
