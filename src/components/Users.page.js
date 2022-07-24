@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const SuperHeroesPage = () => {
+const UsersPage = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [data, setData] = useState([]);
     const [error, setError] = useState("");
 
     useEffect(() => {
         axios
-            .get("http://localhost:4000/superheroes")
+            .get("https://jsonplaceholder.typicode.com/users")
             .then((res) => {
                 setData(res.data);
                 setIsLoading(false);
@@ -27,15 +27,14 @@ const SuperHeroesPage = () => {
         return <h2>{error}</h2>;
     }
 
-    console.log(data);
     return (
         <>
-            <h2>Super Heroes Page</h2>
-            {data.map((hero) => {
-                return <div key={hero.id}>{hero.name}</div>;
+            <h2>Users Page</h2>
+            {data.map((user) => {
+                return <div key={user.id}>{user.name}</div>;
             })}
         </>
     );
 };
 
-export default SuperHeroesPage;
+export default UsersPage;
